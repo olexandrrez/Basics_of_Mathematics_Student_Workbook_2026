@@ -1,54 +1,30 @@
 # Problem 01: Matrix Size and Entries
 
-## 1. Original Problem
-Given:
-$$A=\begin{pmatrix}2&-1&3\\0&4&5\end{pmatrix},\qquad B=\begin{pmatrix}1&0\\-2&3\\4&1\end{pmatrix}.$$
+## Problem
+
+Given
+
+$$A=\begin{pmatrix}2&-1&3\\0&4&5\end{pmatrix},\qquad
+B=\begin{pmatrix}1&0\\-2&3\\4&1\end{pmatrix}.$$
 
 1. State the sizes of matrices $A$ and $B$.
-2. Read off the entries $a_{12}$, $a_{23}$, $b_{21}$, and $b_{32}$.
+2. Find the entries $a_{12}$, $a_{23}$, $b_{21}$, and $b_{32}$.
 3. Write the second row of $A$ and the first column of $B$ as vectors.
 
-## 2. What We Are Trying to Find
-We need to determine the dimensions (rows $\times$ columns) of two rectangular matrices, extract specific entries identified by coordinate indices, and write out a specific row and column as vector objects.
+## Worked Solution
 
-## 3. Key Idea or Theorem Needed Before the Calculation
-- **Matrix Dimensions ($m \times n$)**: The size of a matrix is written as $m \times n$, where $m$ is the number of horizontal rows and $n$ is the number of vertical columns.
-- **Entry Coordinates ($a_{ij}$)**: In a matrix $A$, $a_{ij}$ denotes the entry in row $i$ and column $j$.
-- **Row and Column Vectors**: Slicing along row index $i$ gives a $1 \times n$ row vector, while slicing along column index $j$ gives an $m \times 1$ column vector.
+A matrix's size is **number of rows times number of columns**. Matrix $A$ has two rows and three columns, so it is $2\times3$. Matrix $B$ has three rows and two columns, so it is $3\times2$.
 
-## 4. Step-by-Step Solution
+In the notation $a_{ij}$, the first index $i$ selects the row and the second index $j$ selects the column. Reading the indicated positions from the given matrices gives
 
-### Step 1: Determine Dimensions
-- Matrix $A$ has $2$ rows and $3$ columns, so its size is $2 \times 3$.
-- Matrix $B$ has $3$ rows and $2$ columns, so its size is $3 \times 2$.
+$$a_{12}=-1,\qquad a_{23}=5,\qquad b_{21}=-2,\qquad b_{32}=1.$$
 
-### Step 2: Read Off Specified Entries
-- For $a_{12}$: in matrix $A$, row $1$, column $2$ contains $-1$. So $a_{12} = -1$.
-- For $a_{23}$: in matrix $A$, row $2$, column $3$ contains $5$. So $a_{23} = 5$.
-- For $b_{21}$: in matrix $B$, row $2$, column $1$ contains $-2$. So $b_{21} = -2$.
-- For $b_{32}$: in matrix $B$, row $3$, column $2$ contains $1$. So $b_{32} = 1$.
+The second row of $A$ runs horizontally across row 2, so as a row vector it is
 
-### Step 3: Extract Row and Column Vectors
-- The second row of $A$ ($i=2$) consists of entries $a_{21}=0, a_{22}=4, a_{23}=5$. As a vector, this is:
-  $$\mathbf{r}_2(A) = \begin{pmatrix} 0 & 4 & 5 \end{pmatrix}$$
-- The first column of $B$ ($j=1$) consists of entries $b_{11}=1, b_{21}=-2, b_{31}=4$. As a vector, this is:
-  $$\mathbf{c}_1(B) = \begin{pmatrix} 1 \\ -2 \\ 4 \end{pmatrix}$$
+$$\begin{pmatrix}0&4&5\end{pmatrix}.$$
 
-## 5. Why Each Step Is Valid
-- Dimensions are counted directly from the grid layout where rows run horizontally and columns run vertically.
-- Indices $(i, j)$ refer unambiguously to row $i$ and column $j$ in Cartesian array ordering.
-- Row vectors and column vectors preserve the exact ordered components along the respective slice.
+The first column of $B$ runs vertically down column 1, so as a column vector it is
 
-## 6. Final Answer in Words
-Matrix $A$ has size $2 \times 3$ and matrix $B$ has size $3 \times 2$. The requested entries are $a_{12} = -1$, $a_{23} = 5$, $b_{21} = -2$, and $b_{32} = 1$. The second row of $A$ is $(0, 4, 5)$ and the first column of $B$ is $(1, -2, 4)^T$.
+$$\begin{pmatrix}1\\-2\\4\end{pmatrix}.$$
 
-## 7. Quick Verification
-- $A$ has $2 \times 3 = 6$ total numbers, matching its appearance. $B$ has $3 \times 2 = 6$ numbers.
-- Visually inspecting the bottom-right of $A$ shows $5 = a_{23}$. Inspecting row 2, column 1 of $B$ confirms $-2 = b_{21}$.
-
-## 8. Common Mistakes
-- Swapping the row and column order (e.g., calling $A$ a $3 \times 2$ matrix). Remember: Rows first, Columns second ("RC").
-- Reading $a_{12}$ as column 1, row 2 instead of row 1, column 2.
-
-## 9. Short In-Class Explanation (3 Sentences)
-To find the size of a matrix, count rows first and columns second, giving $2 \times 3$ for $A$ and $3 \times 2$ for $B$. The notation $a_{ij}$ means the entry in row $i$ and column $j$, so $a_{12} = -1$ and $b_{21} = -2$. Slicing across row 2 of $A$ gives $(0, 4, 5)$, and down column 1 of $B$ gives $(1, -2, 4)^T$.
+**Check.** In $A$, row 1 is $(2,-1,3)$, confirming $a_{12}=-1$, and row 2 is $(0,4,5)$, confirming $a_{23}=5$ and the requested second row. In $B$, row 2 is $(-2,3)$ and row 3 is $(4,1)$, confirming $b_{21}=-2$, $b_{32}=1$, and that its first column is $(1,-2,4)^T$. The vector orientations also match the matrices: a row is horizontal and a column is vertical.
