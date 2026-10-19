@@ -33,9 +33,7 @@ The reconstructed vector matches $w$ exactly.
 
 ### Step 4: Geometric Meaning of the Coefficients
 - Vectors $u = (1, 1)$ and $v = (2, -1)$ are non-parallel (their determinant is $1(-1) - 1(2) = -3 \neq 0$), so they define a valid coordinate grid spanning the entire 2D plane $\mathbb{R}^2$.
-- The existence and uniqueness of coefficients $a = 7/3$ and $b = 4/3$ means that to reach point $(5, 1)$ starting from the origin:
-  1. We travel $7/3$ units along the direction of vector $u$.
-  2. From there, we travel $4/3$ units along the direction of vector $v$.
+- The coefficients describe the scaled displacements $(7/3)u$ and $(4/3)v$ from the origin. Since $u$ and $v$ are not unit vectors, the coefficients are not the lengths of those displacements. Their lengths are $(7/3)\|u\|=7\sqrt{2}/3$ and $(4/3)\|v\|=4\sqrt{5}/3$.
 The coefficients represent the **coordinates of $w$ in the non-orthogonal basis $\{u, v\}$**.
 
 ## 5. Why Each Step Is Valid
@@ -57,4 +55,4 @@ Vector $w$ can be written as a linear combination of $u$ and $v$ with coefficien
 - Forgetting to reconstruct $w$ to verify the solution.
 
 ## 9. Short In-Class Explanation (3 Sentences)
-Setting up the system of equations for the components gives $a + 2b = 5$ and $a - b = 1$, which solves to $a = 7/3$ and $b = 4/3$. Reconstructing $\frac{7}{3}(1, 1) + \frac{4}{3}(2, -1)$ yields $(5, 1)$, verifying the combination. Geometrically, because $u$ and $v$ are non-parallel, they form a basis for the plane, and the coefficients tell us how far to move along each direction to reach $w$.
+Setting up the component equations gives $a+2b=5$ and $a-b=1$, so $a=7/3$ and $b=4/3$. Reconstructing $(7/3)u+(4/3)v$ yields $(5,1)$. These are multipliers of the basis vectors, not distances; the resulting displacement lengths are $7\sqrt2/3$ and $4\sqrt5/3$.

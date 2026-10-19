@@ -100,6 +100,14 @@ $$4x^2 = z^2 \implies z^2 - 4x^2 = 0 \implies (z - 2x)(z + 2x) = 0.$$
   - Axis of symmetry: the $z$-axis.
   - Geometry: It consists of two symmetric funnels meeting at the origin, flattened in the $x$-direction and stretched twice as wide along the $y$-direction.
 
+### Sketches
+
+The ellipse sketch labels its centre and four vertices. The cone sketch shows both halves, the apex, and a horizontal elliptical section whose $y$-semiaxis is twice its $x$-semiaxis.
+
+![Ellipse centred at (1, minus 2), with centre and four vertices labelled](figures/exercise_15_ellipse.svg)
+
+![Elliptic cone with apex and unequal horizontal semiaxes](figures/exercise_15_elliptic_cone.svg)
+
 ## 5. Why Each Step Is Valid
 1. **Completing the square**: Reorganizing quadratic and linear terms into binomial squares preserves equality while uncovering the translation vector $(1, -2)$.
 2. **Dividing by $c^2$**: For any non-zero elevation $c$, dividing by $c^2 > 0$ converts $4x^2 + y^2 = c^2$ into the canonical 2D ellipse equation.

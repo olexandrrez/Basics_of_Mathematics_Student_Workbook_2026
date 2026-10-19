@@ -44,6 +44,12 @@ $$P_1 = (3, 6) \quad \text{and} \quad P_2 = (3, -6).$$
 - Notice that the focus is located at $(p/2, 0) = (3, 0)$. The segment connecting $(3, -6)$ to $(3, 6)$ is the **latus rectum** (focal chord perpendicular to the axis of symmetry), whose length is exactly $2p = 12$.
 - The curve curves smoothly around the focus $(3, 0)$ and opens wider as $x \to \infty$.
 
+### Sketch
+
+The curve opens right from its vertex, passes through $(3,6)$ and $(3,-6)$, and is symmetric about the $x$-axis.
+
+![Right-opening parabola with vertex and points at x equals 3](figures/exercise_04_parabola.svg)
+
 ## 5. Why Each Step Is Valid
 - Solving $y^2 = 36$ yields the two symmetric real roots $\pm 6$.
 - Parabolic focus-directrix property ensures that every point $(x, y)$ on the curve is equidistant from the focus $(3, 0)$ and the directrix line $x = -3$.

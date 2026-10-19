@@ -50,6 +50,12 @@ More precisely, compute the difference between the hyperbola and the asymptote l
 $$\frac{3}{4} x - \frac{3}{4} x \sqrt{1 - \frac{16}{x^2}} = \frac{3}{4} x \left(1 - \sqrt{1 - \frac{16}{x^2}}\right) = \frac{3}{4} x \cdot \frac{\frac{16}{x^2}}{1 + \sqrt{1 - \frac{16}{x^2}}} = \frac{12}{x \left(1 + \sqrt{1 - \frac{16}{x^2}}\right)} \xrightarrow{x \to \infty} 0.$$
 The vertical distance between the curve and the asymptote lines vanishes to zero as $|x| \to \infty$. Near the center, the constant 1 creates the gap of size $2a = 8$ between vertices, but far away, that constant 1 is negligible compared to huge $x^2$, making the hyperbola indistinguishable from its asymptotes.
 
+### Sketch
+
+The vertices are $(\pm4,0)$; the dashed lines are the asymptotes $y=\pm3x/4$.
+
+![Horizontal hyperbola with vertices and asymptotes](figures/exercise_05_hyperbola.svg)
+
 ## 5. Why Each Step Is Valid
 - Factoring out $x^2$ isolates the asymptotic dominant term in the function.
 - The limit evaluation proves convergence of the curve to the asymptotes at infinity.

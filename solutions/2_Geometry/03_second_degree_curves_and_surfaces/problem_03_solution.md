@@ -47,6 +47,12 @@ For each fraction to stay $\le 1$:
 - The variable $y$ can only range between $-3$ and $+3$ (since $y^2 \le 9$).
 The larger denominator directly grants the corresponding variable a wider range of allowed coordinates, stretching the ellipse along that axis.
 
+### Sketch
+
+The ellipse is horizontally wider than it is tall; the four labelled intercepts are $(\pm5,0)$ and $(0,\pm3)$.
+
+![Ellipse x squared over 25 plus y squared over 9 equals 1](figures/exercise_03_ellipse.svg)
+
 ## 5. Why Each Step Is Valid
 - Setting a coordinate to zero isolates the intersection of the conic section with that coordinate axis.
 - Taking the square root of positive denominators yields the exact boundary extents of the real locus.

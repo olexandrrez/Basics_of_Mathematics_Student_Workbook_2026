@@ -12,7 +12,7 @@ We must prove algebraically that any square matrix satisfying $A^2 = I$ (an invo
 
 ## 3. Key Idea or Theorem Needed Before the Calculation
 - **Definition of Inversion**: For a square matrix $A$, if there exists a matrix $B$ such that $AB = I$ and $BA = I$, then $B$ is uniquely defined as $A^{-1}$.
-- **Involutory Matrix**: A matrix satisfying $A^2 = I$ is called an involution. Geometrically, involutions represent **reflections**: applying a reflection twice across the same line returns every point to its original position.
+- **Involutory Matrix**: A matrix satisfying $A^2 = I$ is called an involution. A reflection is one example of an involution: applying it twice across the same line returns every point to its original position. Not every involution is a Euclidean reflection.
 
 ## 4. Step-by-Step Solution
 
@@ -58,4 +58,4 @@ If $A^2 = I$, then $A$ multiplied by itself is $I$, which means $A$ satisfies th
 - Concluding that $A^2 = I$ implies $A = \pm I$ (which is true for numbers, but false for matrices!).
 
 ## 9. Short In-Class Explanation (3 Sentences)
-From the equation $A \cdot A = I$, the matrix $A$ directly satisfies the definition of the inverse matrix, proving immediately that $A^{-1} = A$. Unlike numbers where $x^2 = 1$ only gives $\pm 1$, matrices have many self-inverting solutions representing geometric reflections. The permutation matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$ swaps coordinates, and squaring it produces the identity matrix, confirming it is its own inverse.
+From the equation $A \cdot A = I$, the matrix $A$ directly satisfies the definition of the inverse matrix, proving immediately that $A^{-1} = A$. Unlike numbers where $x^2 = 1$ only gives $\pm 1$, matrices have many self-inverting solutions. A reflection is one example of an involution. The permutation matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$ swaps coordinates, and squaring it produces the identity matrix, confirming it is its own inverse.

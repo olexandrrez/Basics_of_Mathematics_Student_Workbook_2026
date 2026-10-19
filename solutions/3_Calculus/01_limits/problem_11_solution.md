@@ -74,8 +74,8 @@ The limit of $\sqrt[n]{5^n+2^n}$ as $n \to \infty$ is $5$. The term $5^n$ comple
 Calculate numerical values for several integers $n$:
 - For $n = 1$: $\sqrt[1]{5^1 + 2^1} = 7$.
 - For $n = 2$: $\sqrt{25 + 4} = \sqrt{29} \approx 5.385$.
-- For $n = 5$: $\sqrt[5]{3125 + 32} = \sqrt[5]{3157} \approx 5.020$.
-- For $n = 10$: $\sqrt[10]{5^{10} + 2^{10}} = \sqrt[10]{9765625 + 1024} \approx 5.0005$.
+- For $n = 5$: $\sqrt[5]{3125 + 32} = \sqrt[5]{3157} \approx 5.010198$.
+- For $n = 10$: $\sqrt[10]{5^{10} + 2^{10}} = \sqrt[10]{9765625 + 1024} \approx 5.000052426$.
 The sequence rapidly approaches $5$ from above.
 
 ## 8. Common Mistakes

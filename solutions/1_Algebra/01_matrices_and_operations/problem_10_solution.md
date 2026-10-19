@@ -57,7 +57,7 @@ The individual matrix-vector products are $Ab_1 = \begin{pmatrix} -1 \\ 2 \end{p
 - Check column 2: $2 \cdot \begin{pmatrix}1\\0\end{pmatrix} + 0 \cdot \begin{pmatrix}2\\1\end{pmatrix} + 1 \cdot \begin{pmatrix}0\\1\end{pmatrix} = \begin{pmatrix}2+0+0\\0+0+1\end{pmatrix} = \begin{pmatrix}2\\1\end{pmatrix}$. Matches.
 
 ## 8. Common Mistakes
-- Computing rows instead of columns: thinking the rows of $AB$ are $a_i B$ without transposing properly.
+- Confusing row and column vectors: if $a_i$ is row $i$ of $A$, then it has size $1\times n$ and row $i$ of $AB$ is $a_iB$ (also a row vector). By contrast, the columns of $B$ have size $n\times1$, and multiplying $A$ by each of them gives the columns of $AB$.
 - Forgetting that $b_1$ and $b_2$ are vertical columns of $B$, not horizontal rows.
 
 ## 9. Short In-Class Explanation (3 Sentences)

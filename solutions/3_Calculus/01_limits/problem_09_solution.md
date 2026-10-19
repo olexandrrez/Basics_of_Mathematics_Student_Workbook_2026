@@ -56,6 +56,12 @@ We must:
   - As you trace the curve from the left approaching $x = 2$, the curve plunges steeply downward toward $-\infty$, hugging the left side of the vertical line $x = 2$.
   - The graph is a rectangular hyperbola shifted $2$ units to the right from the standard curve $y = 1/x$.
 
+### Sketch
+
+The graph has a vertical asymptote at $x=2$. The left branch tends to $-\infty$ and the right branch tends to $+\infty$ as indicated by the one-sided limits.
+
+![Graph of one over x minus two with vertical asymptote x equals two](figures/exercise_09_graph.svg)
+
 ## 5. Why Each Step Is Valid
 1. **Sign analysis**: For $x > 2$, the difference $x - 2$ is positive, so the quotient of positive numbers $1/(x-2)$ must be positive.
 2. **Infinite limit definition**: A quotient with a non-zero numerator and a denominator tending to $0$ must diverge in magnitude to infinity.

@@ -65,7 +65,7 @@ Rewrite the equation as $x^2 + y^2 = c^2 - 1$.
   There are **no real points** on the surface in the entire vertical slab $-1 < z < 1$.
 - **At $c = \pm 1$**:
   $$x^2 + y^2 = 1^2 - 1 = 0.$$
-  This yields the single isolated points $(0, 0, 1)$ and $(0, 0, -1)$, which are the two apexes (vertices) of the surface.
+  Each horizontal slice is a single point, $(0,0,1)$ or $(0,0,-1)$; these are the vertices of the respective sheets, not isolated points of the full surface.
 - **At $c = \pm 2$**:
   $$x^2 + y^2 = 2^2 - 1 = 3.$$
   This is a circle with radius $R(\pm 2) = \sqrt{3} \approx 1.732$.
@@ -74,6 +74,14 @@ Rewrite the equation as $x^2 + y^2 = c^2 - 1$.
 #### Step 2: Qualitative description
 - The surface is split into two completely separate, mirror-symmetric pieces: an upper bowl opening upward from $z = 1$ and a lower bowl opening downward from $z = -1$, separated by a completely empty gap of height $2$.
 - Name: **Hyperboloid of two sheets** (two disconnected components).
+
+### Qualitative sketches
+
+The first wireframe has a nonzero waist circle at $z=0$. The second has vertices at $z=\pm1$, no surface between them, and representative horizontal circular sections above and below those vertices.
+
+![One-sheet hyperboloid with a waist at z equals zero](figures/exercise_11_one_sheet.svg)
+
+![Two-sheet hyperboloid with vertices at z equals plus or minus one and a gap between](figures/exercise_11_two_sheets.svg)
 
 ## 5. Why Each Step Is Valid
 1. **Level-set slicing**: Setting $z = c$ restricts the surface equation to a horizontal 2D plane, where the form $x^2 + y^2 = r$ can be evaluated by standard circle properties.

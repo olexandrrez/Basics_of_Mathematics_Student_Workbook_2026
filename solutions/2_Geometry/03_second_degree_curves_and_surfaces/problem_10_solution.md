@@ -69,6 +69,14 @@ Finally, we must describe their qualitative geometric shapes.
 #### 4. Qualitative Shape:
 - A classic **saddle surface** (or mountain pass / potato chip). At the origin $(0, 0, 0)$, moving along the $x$-axis leads uphill, while moving along the $y$-axis leads downhill. The origin is a saddle point.
 
+### Qualitative sketches
+
+The coordinate axes are labelled, and the wireframes show representative traces in the coordinate directions: upward parabolas in both directions for the bowl, and an upward and downward trace for the saddle.
+
+![Upward bowl z equals x squared plus y squared](figures/exercise_10_bowl.svg)
+
+![Saddle z equals x squared minus y squared](figures/exercise_10_saddle.svg)
+
 ## 5. Why Each Step Is Valid
 1. **Vertical slices**: Holding one variable constant effectively confines the geometry to a two-dimensional plane, where the quadratic dependency immediately yields standard parabolas.
 2. **Horizontal contour analysis**: For $z = c$, the sign of the constant determines whether quadratic forms define circles, hyperbolas, degenerate lines, or empty sets.

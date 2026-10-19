@@ -44,16 +44,16 @@ We must compute the perpendicular distance from a 2D point to a line and from a 
 - **Connection to Normal Direction**:
   The shortest path from a point to a flat surface is along the unique line that meets the surface at a right angle (the normal direction).
   Let $X_0$ be any point on the line/plane (so $f(X_0) = 0$). The displacement from $X_0$ to our external point is $w = X - X_0$.
-  The scalar projection of $w$ onto the unit normal vector $\hat{n} = n / \|n\|$ is:
-  $$\text{proj}_{\hat{n}} w = |w \cdot \hat{n}| = \frac{|(X - X_0) \cdot n|}{\|n\|} = \frac{|n \cdot X - n \cdot X_0|}{\|n\|} = \frac{|A x_0 + B y_0 + \dots + \text{Const}|}{\|n\|}.$$
-  Both formulas are simply the length of the orthogonal projection of the displacement vector onto the normal line.
+  The signed scalar projection of the displacement $w=X-X_0$ onto the unit normal $\hat{n}=n/\|n\|$ is
+  $$s=w\cdot\hat{n}=(X-X_0)\cdot\hat{n}.$$
+  Its magnitude, which is the distance, is $|s|=|(X-X_0)\cdot n|/\|n\|$. The vector projection is $(w\cdot\hat{n})\hat{n}$; its length is $|w\cdot\hat{n}|$. Keeping $X-X_0$ explicit accounts for the offset of the line or plane from the origin.
 
 ## 5. Why Each Step Is Valid
 - The 2D line and 3D plane distance formulas are direct consequences of vector dot product projection.
 - Taking the absolute value guarantees that geometric distance is strictly non-negative.
 
 ## 6. Final Answer in Words
-The distance from point $P$ to the line is $8/5 = 1.6$, and the distance from point $Q$ to the plane is $5/3 \approx 1.67$. Both formulas share the exact same mathematical structure: evaluating the Cartesian equation at the point and dividing by the length of the normal vector. This occurs because the shortest distance in both cases is the orthogonal projection of the point onto the normal vector.
+The distance from point $P$ to the line is $8/5=1.6$, and the distance from point $Q$ to the plane is $5/3\approx1.67$. Each distance is the magnitude of the signed scalar projection of a displacement $X-X_0$, where $X_0$ lies on the line or plane, onto the unit normal. Keeping this displacement explicit accounts for the offset from the origin; projecting the point's position vector alone would not generally give the distance.
 
 ## 7. Quick Verification
 - Check line: Point on line closest to $(2, 3)$ is $(2, 3) - \frac{8}{25}(3, 4) = (2 - 24/25, 3 - 32/25) = (26/25, 43/25)$.
@@ -68,4 +68,4 @@ The distance from point $P$ to the line is $8/5 = 1.6$, and the distance from po
 - Sign errors when substituting negative coordinates: $-2(-1) = +2$, not $-2$.
 
 ## 9. Short In-Class Explanation (3 Sentences)
-We plug point $P(2, 3)$ into the line equation and divide by the normal length $\sqrt{3^2+4^2}=5$ to get the distance $8/5 = 1.6$. Similarly, plugging $Q(2, -1, 3)$ into the plane equation and dividing by the normal length $\sqrt{2^2+(-2)^2+1^2}=3$ gives the distance $5/3$. Both formulas share the exact same structure because the shortest distance in both dimensions is the orthogonal projection of the point onto the normal direction.
+We take the displacement from a point on the line or plane to the given point and project it onto the unit normal. The magnitudes of these signed scalar projections are $8/5=1.6$ and $5/3$, respectively. Using the displacement $X-X_0$ accounts for the offset from the origin.

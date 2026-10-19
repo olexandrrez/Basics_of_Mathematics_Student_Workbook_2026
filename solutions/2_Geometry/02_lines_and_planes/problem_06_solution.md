@@ -13,7 +13,7 @@ We must determine if planes $\Pi_1$ and $\Pi_2$ are parallel by comparing their 
 - **Parallelism Criterion**: Two planes are parallel if and only if their normal vectors are proportional: $n_1 = c n_2$.
 - **Dihedral Angle Between Planes**: The acute angle $\theta \in [0, \pi/2]$ between two planes equals the acute angle between their normal lines:
   $$\cos\theta = \frac{|n_1 \cdot n_2|}{\|n_1\| \|n_2\|}.$$
-- **Why normals suffice**: Rotating both planes by $90^\circ$ turns them into their respective normal lines without changing the relative angle between them.
+- **Why normals suffice**: A rigid rotation cannot turn a plane into a line. Instead, take a cross-section perpendicular to the planes' intersection line. Each plane meets it in a line, and rotating those trace lines by $90^\circ$ gives directions parallel to the planes' normals while preserving their angle.
 
 ## 4. Step-by-Step Solution
 
@@ -40,15 +40,14 @@ This is contradictory. Because $n_1$ and $n_2$ are not scalar multiples, the pla
 The two planes are **perpendicular (orthogonal)**.
 
 ### Step 4: Explain Why Normal Vectors Alone Are Enough
-The normal vector of a plane points in the direction perpendicular to the flat sheet. If you rotate two intersecting planes by $90^\circ$ in the plane perpendicular to their intersection line, each plane turns into its normal line.
-Because a rigid rotation of space preserves all angles between objects, the angle between the two planes is identical to the angle between their respective normal lines. Therefore, the normal vectors contain all necessary orientation information, and finding the line of intersection is completely unnecessary.
+Take a cross-section perpendicular to the intersection line. Each plane meets this cross-section in a line, called its trace. Rotating each trace line by $90^\circ$ in the cross-section gives a direction parallel to that plane's normal. A rotation preserves the angle between the two trace lines, so the angle between the normals equals the dihedral angle between the planes. The planes themselves remain two-dimensional throughout; only their cross-sectional traces are rotated.
 
 ## 5. Why Each Step Is Valid
 - Normal vectors extract the gradient of the defining linear forms.
 - The dot product evaluate to $0$, which by Cauchy-Schwarz and trigonometry uniquely implies an angle of $90^\circ$.
 
 ## 6. Final Answer in Words
-The planes are not parallel because their normal vectors $n_1 = (1, 1, 1)$ and $n_2 = (1, -1, 0)$ are not proportional. The angle between them is $90^\circ$ ($\pi/2$ radians), meaning the planes are perpendicular. Normal vectors alone are sufficient because the angle between two planes is identical to the angle between their perpendicular normal directions.
+The planes are not parallel because their normal vectors $n_1 = (1, 1, 1)$ and $n_2 = (1, -1, 0)$ are not proportional. The angle between them is $90^\circ$ ($\pi/2$ radians), meaning the planes are perpendicular. In a cross-section perpendicular to their intersection line, the planes become trace lines; rotating those lines by $90^\circ$ preserves their angle and gives directions parallel to the normals.
 
 ## 7. Quick Verification
 - Let $v$ be the intersection line direction: $v = n_1 \times n_2 = (1, 1, -2)$.
@@ -60,4 +59,4 @@ The planes are not parallel because their normal vectors $n_1 = (1, 1, 1)$ and $
 - Reading $n_2$ as $(1, -1, 2)$ instead of $(1, -1, 0)$, forgetting that $z$ has coefficient 0.
 
 ## 9. Short In-Class Explanation (3 Sentences)
-We extract the normal vectors $n_1 = (1, 1, 1)$ and $n_2 = (1, -1, 0)$, which are not proportional, confirming that the planes are not parallel. Taking their dot product gives $1 - 1 + 0 = 0$, which means that $\cos\theta = 0$ and the angle is $90^\circ$. The normal vectors alone are sufficient because rotating planes into their perpendicular normals preserves the exact dihedral angle between them.
+We extract the normal vectors $n_1=(1,1,1)$ and $n_2=(1,-1,0)$, whose dot product is zero, so the plane angle is $90^\circ$. To justify using normals, take a cross-section perpendicular to the planes' intersection line: each plane gives a trace line there. Rotating those trace lines by $90^\circ$ preserves their angle and makes their directions parallel to the normals.

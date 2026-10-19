@@ -14,9 +14,9 @@ We must determine the qualitative type of the angle between vectors $u$ and $v$ 
 - **Dot Product Angle Formula**: For non-zero vectors $u$ and $v$,
   $$\cos\theta = \frac{u \cdot v}{\|u\| \|v\|}, \quad \theta \in [0, \pi].$$
 - **Sign Interpretation of $u \cdot v$**: Since vector norms $\|u\|$ and $\|v\|$ are strictly positive:
-  - $u \cdot v > 0 \implies \cos\theta > 0 \implies 0^\circ \le \theta < 90^\circ$ (**acute angle**).
+  - $u \cdot v > 0 \implies \cos\theta > 0 \implies 0^\circ \le \theta < 90^\circ$. This includes $0^\circ$ when the vectors point in the same direction; an **acute** angle has $0^\circ < \theta < 90^\circ$.
   - $u \cdot v = 0 \implies \cos\theta = 0 \implies \theta = 90^\circ$ (**right angle**).
-  - $u \cdot v < 0 \implies \cos\theta < 0 \implies 90^\circ < \theta \le 180^\circ$ (**obtuse angle**).
+  - $u \cdot v < 0 \implies \cos\theta < 0 \implies 90^\circ < \theta \le 180^\circ$. This includes $180^\circ$ for opposite directions; an **obtuse** angle has $90^\circ < \theta < 180^\circ$.
 
 ## 4. Step-by-Step Solution
 
@@ -25,7 +25,7 @@ For $u = (1, 1, 0)$ and $v = (1, 0, 1)$:
 $$u \cdot v = (1)(1) + (1)(0) + (0)(1) = 1 + 0 + 0 = 1.$$
 Since $u \cdot v = 1 > 0$, the cosine of the angle must be positive:
 $$\cos\theta > 0.$$
-**Prediction**: The angle between $u$ and $v$ is **acute** ($0 < \theta < 90^\circ$).
+**Prediction**: Since these vectors are not parallel, their positive dot product gives an **acute** angle ($0 < \theta < 90^\circ$).
 
 ### Step 2: Compute Vector Lengths
 - Length of $u$:
@@ -61,4 +61,4 @@ The dot product is $u \cdot v = 1 > 0$, predicting an acute angle. Computing the
 - Giving $\cos\theta = 1/2$ as the final answer without finding the angle $\theta = 60^\circ$.
 
 ## 9. Short In-Class Explanation (3 Sentences)
-Because the dot product $u \cdot v = 1$ is positive, we know in advance that the cosine of the angle is positive and therefore the angle must be acute. Calculating the vector lengths gives $\|u\| = \sqrt{2}$ and $\|v\| = \sqrt{2}$, which leads to $\cos\theta = 1/2$. Taking the inverse cosine gives $\theta = 60^\circ$, confirming our prediction of an acute angle.
+For nonzero vectors, a positive dot product gives an angle in $[0^\circ,90^\circ)$, with $0^\circ$ possible when the vectors point in the same direction. These particular vectors are not parallel, so their angle is strictly acute. Their lengths give $\cos\theta=1/2$, hence $\theta=60^\circ$.

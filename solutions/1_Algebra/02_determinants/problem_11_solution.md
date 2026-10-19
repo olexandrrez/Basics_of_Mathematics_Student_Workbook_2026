@@ -37,7 +37,7 @@ Use Row 2 to eliminate the entry in Row 3:
   $$R_3 - 2R_2 = (0, 2, 3) - 2(0, 1, 1) = (0, 2-2, 3-2) = (0, 0, 1).$$
   *Effect on determinant*: Does not change the determinant.
 
-The matrix is now strictly upper-triangular:
+The matrix is now upper-triangular:
 $$A_2 = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{pmatrix}, \qquad \det A = \det A_2.$$
 
 ### Step 3: Compute the Determinant

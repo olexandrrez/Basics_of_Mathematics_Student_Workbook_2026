@@ -61,6 +61,12 @@ We must classify each of the four second-degree conic sections in canonical form
   - Semiaxis lengths: $a = 3, b = 2$.
 - **Shape**: Two disconnected open branches opening left and right away from vertices $(-3, 0)$ and $(3, 0)$, approaching the lines $y = \pm \frac{2}{3}x$ as $|x| \to \infty$.
 
+### Sketches
+
+The marked vertices and intercepts match the calculated features. The hyperbola sketch also shows both asymptotes.
+
+![Circle, ellipse, parabola, and hyperbola with axes and key points](figures/exercise_01_conics.svg)
+
 ## 5. Why Each Step Is Valid
 - The signs and degrees of the variables in second-degree Cartesian equations uniquely determine the affine and Euclidean equivalence classes of conic sections.
 - Setting coordinates to zero isolates the exact axis intercepts and vertices.

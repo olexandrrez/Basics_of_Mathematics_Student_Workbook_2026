@@ -15,7 +15,7 @@ We must analyze three computational scenarios, select the optimal mathematical m
 ## 3. Key Idea or Theorem Needed Before the Calculation
 - **Triangular Systems $\to$ Direct Back-Substitution**: A triangular matrix already has zeros below (or above) the diagonal, requiring zero elimination steps; solving directly from the bottom up is immediate and requires minimal arithmetic.
 - **Multiple Right-Hand Sides with Known $A^{-1} \to$ Matrix-Vector Multiplication**: If $A^{-1}$ is already known, finding each solution $x_i$ takes only one matrix-vector multiplication $x_i = A^{-1} b_i$. The precomputed inverse is fully reusable across all $b_i$.
-- **Single System with Unknown Inverse $\to$ Gaussian Elimination**: Finding $A^{-1}$ requires roughly $n^3$ operations, whereas Gaussian elimination with back-substitution takes only $\frac{1}{3} n^3$ operations. For a single right-hand side, computing the full inverse is completely unnecessary overhead.
+- **Single System with Unknown Inverse $\to$ Elimination**: When only one solution vector is needed, elimination processes the given right-hand side directly. Forming a full inverse also processes the other columns of the identity matrix, which are not needed for this one solution.
 
 ## 4. Step-by-Step Solution
 
@@ -44,15 +44,15 @@ We must analyze three computational scenarios, select the optimal mathematical m
 - **Justification and Plan**:
   Augment the matrix $[A \mid b]$, perform row operations to reach upper-triangular echelon form, and find $x$ via back-substitution.
 - **Reusable vs Unnecessary**:
-  - Inverting $A$ requires augmenting with the full identity matrix $[A \mid I_3]$ and running elimination on 3 right-hand columns, which takes roughly three times more arithmetic operations.
-  - Computing $A^{-1}$ is **unnecessary** because the goal is solely to find one single solution vector $x$, so the inverse would never be used again.
+  - Elimination first checks consistency and identifies pivots. If the system is consistent, back-substitution then determines the solution set; it need not be unique.
+  - Forming $A^{-1}$ would also process the other columns of the identity matrix, although the goal asks only for one solution vector.
 
 ## 5. Why Each Step Is Valid
 - The back-substitution steps $4y=8 \implies y=2$ and $2x-2=3 \implies x=5/2$ are exact algebraic deductions.
-- The computational complexity arguments ($\mathcal{O}(n^3/3)$ for elimination vs $\mathcal{O}(n^3)$ for full inversion) rigorously substantiate the method choices.
+- For the third scenario, elimination is suited to finding one solution because it works with the given right-hand side and reveals consistency and pivots directly.
 
 ## 6. Final Answer in Words
-For Case 1, direct back-substitution is optimal, yielding $y = 2$ and $x = 5/2$. For Case 2, matrix-vector multiplication $x_i = A^{-1} b_i$ is optimal because the precomputed inverse is reused three times. For Case 3, Gaussian elimination is optimal because computing the entire inverse matrix is unnecessary and computationally wasteful for a single solution vector.
+For Case 1, direct back-substitution yields $y = 2$ and $x = 5/2$. For Case 2, use the known inverse for each right-hand side; its entries can be reused. For Case 3, use elimination to check consistency and pivots, then back-substitute as applicable; a unique solution is not guaranteed by the information given.
 
 ## 7. Quick Verification
 - Check Case 1 solution:
@@ -65,4 +65,4 @@ For Case 1, direct back-substitution is optimal, yielding $y = 2$ and $x = 5/2$.
 - Forgetting that when $A^{-1}$ is already given, solving is just a matrix-vector multiplication.
 
 ## 9. Short In-Class Explanation (3 Sentences)
-For the triangular system, we immediately back-substitute to find $y = 2$ and $x = 5/2$ without needing any row operations. When solving multiple systems with the same matrix and an already known inverse, we simply multiply $x_i = A^{-1}b_i$ to reuse the inverse efficiently. For a single system with an unknown inverse, Gaussian elimination is the best choice because computing the full inverse requires three times more work than necessary.
+For the triangular system, we immediately back-substitute to find $y = 2$ and $x = 5/2$ without needing any row operations. When solving multiple systems with the same matrix and an already known inverse, we can reuse it in $x_i = A^{-1}b_i$. For the third system, elimination checks consistency and pivots first; back-substitution follows when applicable, whether or not the solution is unique.

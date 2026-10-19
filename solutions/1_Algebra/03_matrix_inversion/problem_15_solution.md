@@ -14,7 +14,7 @@ We must solve the $2 \times 2$ system $Ax = b$ using two different methods: matr
 ## 3. Key Idea or Theorem Needed Before the Calculation
 - **Method 1 (Matrix Inversion)**: Compute $\det A$, find $A^{-1}$ using the adjugate formula, and evaluate $x = A^{-1} b$.
 - **Method 2 (Gaussian Elimination)**: Form the augmented matrix $[A \mid b]$, perform row operations to reach upper-triangular echelon form, and solve for the variables by back-substitution.
-- **Efficiency Comparison**: Inverting a matrix computes the full mapping $A^{-1}$ (useful if solving for many different right-hand sides $b$), whereas Gaussian elimination solves directly for the single target vector $b$ with fewer total arithmetic operations.
+- **Method Comparison**: Elimination solves directly for the given right-hand side. A known inverse can be reused for other right-hand sides, but elimination factors can also be reused; this example compares the work for one right-hand side only.
 
 ## 4. Step-by-Step Solution
 
@@ -29,7 +29,7 @@ We must solve the $2 \times 2$ system $Ax = b$ using two different methods: matr
 ### Method 2: Using Gaussian Elimination
 1. Form the augmented matrix:
    $$\left[\begin{array}{cc|c} 2 & 1 & 7 \\ 1 & 3 & 8 \end{array}\right].$$
-2. Swap $R_1$ and $R_2$ to obtain a pivot of 1:
+2. First swap $R_1$ and $R_2$ to obtain a pivot of 1:
    $$\left[\begin{array}{cc|c} 1 & 3 & 8 \\ 2 & 1 & 7 \end{array}\right].$$
 3. Eliminate the first column in Row 2 using $R_2 \leftarrow R_2 - 2R_1$:
    - Left side: $(2, 1) - 2(1, 3) = (0, -5)$.
@@ -42,10 +42,10 @@ Thus $x = \begin{pmatrix} 13/5 \\ 9/5 \end{pmatrix}$.
 
 ### Step 3: Comparison of the Methods
 - Both methods yield the exact same solution: $x_1 = 13/5 = 2.6$, $x_2 = 9/5 = 1.8$.
-- **Number of essential steps**:
-  - Method 1 requires computing a determinant, finding 4 entries of the inverse matrix, and performing 4 multiplications and 2 additions to multiply $A^{-1}b$.
-  - Method 2 requires only one row elimination operation and two back-substitution steps.
-- **Which method was simpler**: Gaussian elimination was simpler and more direct because it avoided computing all four entries of the inverse matrix just to find a single solution vector. However, if we had to solve $Ax = b$ for 100 different vectors $b$, computing $A^{-1}$ once would become the superior choice.
+- **Comparison for this example**:
+  - Method 1 computes the determinant and all four entries of $A^{-1}$, then multiplies by $b$.
+  - Method 2 first swaps the two rows, then performs one row replacement and two back-substitution steps.
+- **Which method was simpler here**: Gaussian elimination was more direct for this one right-hand side because it did not require computing the full inverse. For multiple right-hand sides, a known inverse can be reused; alternatively, elimination factors can be reused to solve each system.
 
 ## 5. Why Each Step Is Valid
 - Matrix inversion uses the exact algebraic inverse $A^{-1} A = I$.

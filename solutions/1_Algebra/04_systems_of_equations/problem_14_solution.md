@@ -8,7 +8,7 @@ $$\begin{cases}x+y=2,\\2x-y=1,\\3x=3.1.\end{cases}$$
 Check the consistency of each system and explain why a small change in one number can change the type of the system.
 
 ## 2. What We Are Trying to Find
-We must solve both 3-equation 2-variable systems, determine whether each system is consistent or inconsistent, and explain why an infinitesimal change from $3.0$ to $3.1$ in a single constant fundamentally alters the mathematical nature of the system from having a unique solution to having no solution.
+We must solve both 3-equation 2-variable systems, determine whether each system is consistent or inconsistent, and explain how the finite change from $3$ to $3.1$ in one constant affects consistency.
 
 ## 3. Key Idea or Theorem Needed Before the Calculation
 - **Overdetermined Systems**: A system with more equations than variables ($3$ equations for $2$ variables in $\mathbb{R}^2$) is generally inconsistent unless the additional equations pass through the exact same intersection point.
@@ -47,17 +47,17 @@ There is no point $(x, y)$ that satisfies all three equations.
 
 ### Step 3: Explain Why a Small Change Alters the System Type
 In System 1, the three lines are **concurrent**: the third line $x = 1$ passes precisely through the intersection point $(1, 1)$ of the first two lines.
-Changing the constant from $3$ to $3.1$ shifts the third vertical line from $x = 1$ to $x = 1.0333\dots$.
-Even though the shift is tiny ($0.1$), the third line no longer passes through the point $(1, 1)$.
+Changing the constant from $3$ to $3.1$ shifts the third vertical line from $x = 1$ to $x = 3.1/3 = 31/30$.
+The shift is $31/30 - 1 = 1/30$; this small finite change makes the third line miss $(1,1)$.
 Since the first two lines meet only at $(1, 1)$, and the third line does not contain $(1, 1)$, there is no longer any point shared by all three lines.
-In linear algebra, consistency in overdetermined systems is an exact equality condition (a point lies on a line or it doesn't); a perturbation of any size destroys concurrency.
+With the first two equations fixed, any nonzero change to the third right-hand side moves the vertical line away from $x=1$, destroying the common intersection. This conclusion is specific to changing this right-hand side while keeping the first two equations fixed; arbitrary perturbations of an overdetermined system need not destroy consistency.
 
 ## 5. Why Each Step Is Valid
 - Any solution to the entire system must satisfy the subset of the first two equations.
 - Evaluating the unique candidate $(1, 1)$ in the third equation constitutes a complete, rigorous test for consistency.
 
 ## 6. Final Answer in Words
-System 1 is consistent with unique solution $(1, 1)$, while System 2 is inconsistent with no solution. A small change in the constant shifts the third line away from the intersection point of the first two lines; because three lines must meet at the exact same point to have a solution, moving the third line by even a fraction creates an empty intersection.
+System 1 is consistent with unique solution $(1,1)$, while System 2 is inconsistent with no solution. When the first two equations stay fixed, any nonzero change to the third right-hand side shifts its vertical line away from their intersection at $(1,1)$ and destroys the common intersection. This conclusion concerns that specific change; arbitrary perturbations of an overdetermined system need not make it inconsistent.
 
 ## 7. Quick Verification
 - Check augmented matrix of System 2:
@@ -69,4 +69,4 @@ System 1 is consistent with unique solution $(1, 1)$, while System 2 is inconsis
 - Overlooking that this is an overdetermined system (3 equations for 2 unknowns).
 
 ## 9. Short In-Class Explanation (3 Sentences)
-The first two equations uniquely define the point $(1, 1)$, which satisfies the third equation $3x = 3$ in the first system, giving a unique solution. In the second system, the third equation requires $3x = 3.1$, which contradicts the value $3x = 3$ demanded by the first two equations. Geometrically, this slight change shifts the third line so that the three lines no longer intersect at a single common point.
+The first two equations uniquely define $(1,1)$, which satisfies $3x=3$. Replacing the right-hand side by $3.1$ moves the third line from $x=1$ to $x=31/30$, a small finite shift of $1/30$, so the three lines no longer share a point. Any nonzero change to this third right-hand side has that effect while the first two equations stay fixed.

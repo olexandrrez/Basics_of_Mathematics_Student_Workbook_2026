@@ -47,12 +47,14 @@ At $x = 0$, $f(0) = \frac{0}{0}$ is undefined. Let us evaluate approaching from 
 | $x$ (left approach) | $f(x) = \frac{\sin 5x}{x}$ | $x$ (right approach) | $f(x) = \frac{\sin 5x}{x}$ |
 | :--- | :--- | :--- | :--- |
 | $-0.1$ | $\frac{\sin(-0.5)}{-0.1} \approx 4.794255$ | $+0.1$ | $\frac{\sin(0.5)}{0.1} \approx 4.794255$ |
-| $-0.05$ | $\frac{\sin(-0.25)}{-0.05} \approx 4.948116$ | $+0.05$ | $\frac{\sin(0.25)}{0.05} \approx 4.948116$ |
+| $-0.05$ | $\frac{\sin(-0.25)}{-0.05} \approx 4.948079$ | $+0.05$ | $\frac{\sin(0.25)}{0.05} \approx 4.948079$ |
 | $-0.01$ | $\frac{\sin(-0.05)}{-0.01} \approx 4.997917$ | $+0.01$ | $\frac{\sin(0.05)}{0.01} \approx 4.997917$ |
 | $-0.001$ | $\frac{\sin(-0.005)}{-0.001} \approx 4.999979$ | $+0.001$ | $\frac{\sin(0.005)}{0.001} \approx 4.999979$ |
 
 **Observation**: As $|x| \to 0$, $f(x)$ symmetrically approaches $5.000000$ from below.
-**Sketch**: An even, bell-like symmetric wave centered on the $y$-axis with a removable hole at $(0, 5)$.
+**Sketch**: The sampled function is even and has a removable hole at $(0,5)$.
+
+![Discrete sequence terms approaching y equals two and graph of sin(5x)/x with a hole at (0,5)](figures/exercise_15_sketches.svg)
 
 ---
 
@@ -60,8 +62,8 @@ At $x = 0$, $f(0) = \frac{0}{0}$ is undefined. Let us evaluate approaching from 
 
 #### Reason 1: The gap between finite samples and infinity
 A table calculates $f(x)$ for 5 or 10 specific numbers. However, between any two real numbers, there are infinitely many points.
-- *Counterexample*: Consider the function $g(x) = \frac{\sin 5x}{x} + \sin\left(\frac{\pi}{1000 x}\right)$.
-  At all points of the form $x = \pm 0.1, \pm 0.01, \pm 0.001$, the extra term is $\sin(k \pi) = 0$, so the table gives the exact same numbers approaching $5$. Yet between these points, the function oscillates wildly between $4$ and $6$, and the limit as $x \to 0$ does not exist! A table cannot detect such high-frequency oscillations.
+- *Counterexample*: Let $g(x) = \frac{\sin 5x}{x} + \sin\left(\frac{\pi}{x}\right)$.
+  At every nonzero sample argument in the table, $1/x$ is an integer, so the added term is zero and the tabulated values are unchanged. But along $x_n=1/(2n+1/2)$, the added sine equals $1$, while along $y_n=1/(2n+3/2)$ it equals $-1$. Both sequences approach zero, and $\sin(5x)/x\to5$, so $g(x_n)\to6$ and $g(y_n)\to4$. The two paths give different limits, proving that $g$ has no limit at zero.
 
 #### Reason 2: Misleading visual sketches
 Drawings have finite physical resolution (pen width, pixels).
@@ -77,7 +79,7 @@ Mathematical proof requires deductive reasoning establishing that $|a_n - L| < \
 3. **Universal quantification**: By definition of mathematical logic, verifying $P(x)$ for a finite subset $S \subset D$ never proves $\forall x \in D, P(x)$ when $D$ is infinite.
 
 ## 6. Final Answer in Words
-Computing values for $a_n = \frac{4n^2-3n+1}{2n^2+5n-7}$ shows monotonic growth toward $2$, and the table for $f(x) = \frac{\sin 5x}{x}$ shows symmetric convergence to $5$ from both sides. However, a finite table or sketch does not constitute a proof because empirical tests only check finitely many points out of an infinite domain, fail to detect hidden high-frequency oscillations or microscopic gaps, and cannot verify the universal quantifier $\forall \epsilon > 0$ required by the formal definition of a limit.
+Computing values for $a_n = \frac{4n^2-3n+1}{2n^2+5n-7}$ shows growth toward $2$, and the table for $f(x) = \frac{\sin 5x}{x}$ shows values approaching $5$ from both sides. A finite table or sketch is not a proof: the added term $\sin(\pi/x)$ vanishes at every nonzero sample point in our table, while the sequences $1/(2n+1/2)$ and $1/(2n+3/2)$ make it approach opposite values. Only an argument covering all sufficiently large $n$ or all $x$ sufficiently close to zero proves a limit.
 
 ## 7. Quick Verification
 - For the sequence: at $n = 10^5$, $a_{100000} = 1.999935$, confirming continued approach to $2$.
@@ -90,4 +92,4 @@ Computing values for $a_n = \frac{4n^2-3n+1}{2n^2+5n-7}$ shows monotonic growth 
 - **Using a rough sketch to deduce asymptotic limits**: Relying on visual curves that can hide slow divergence (e.g., $\ln x$ looks flat but grows to $\infty$).
 
 ## 9. Short In-Class Explanation (3 Sentences)
-Calculating numerical tables for $\frac{4n^2-3n+1}{2n^2+5n-7}$ and $\frac{\sin 5x}{x}$ gives strong intuition that their values approach $2$ and $5$. However, testing a few numbers cannot prove a limit because it only samples isolated points and cannot detect microscopic oscillations or behavior across the entire infinite domain. Rigorous proof requires deductive algebraic theorems that guarantee the values stay within an arbitrarily small margin $\epsilon$ for all points near the limit.
+Calculating numerical tables for $\frac{4n^2-3n+1}{2n^2+5n-7}$ shows growth toward $2$, while the table for $\frac{\sin 5x}{x}$ approaches $5$ from both sides. A finite table or sketch is not a proof: adding $\sin(\pi/x)$ leaves every listed nonzero sample value unchanged, but along $x_n=1/(2n+1/2)$ and $y_n=1/(2n+3/2)$ the added term tends to opposite values. A proof must cover all sufficiently large $n$ or all $x$ sufficiently close to zero.
