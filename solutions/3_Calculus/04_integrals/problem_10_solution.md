@@ -16,7 +16,7 @@ An antiderivative is $x^3/3+x$. Thus
 $$I=\left[\frac{x^3}{3}+x\right]_0^2=\frac83+2=\frac{14}{3}\approx4.667.$$
 
 ## 5. Why Each Step Is Valid
-Integrating the pointwise inequalities preserves order because the interval is the same and the integrands are continuous. The exact value lies within the predicted range.
+Integrating the pointwise inequalities preserves order because the interval is the same and the integrands are continuous. The exact value lies within the predicted range. This coarse check would flag a negative result or any value below 2 or above 10, indicating a likely arithmetic, sign, scaling, or endpoint-evaluation error. However, an incorrect value that still falls inside $[2,10]$ can pass this check, so the bound is a diagnostic rather than a proof of the exact calculation.
 
 ## 6. Final Answer in Words
 The integral equals $14/3$, which is between 2 and 10.

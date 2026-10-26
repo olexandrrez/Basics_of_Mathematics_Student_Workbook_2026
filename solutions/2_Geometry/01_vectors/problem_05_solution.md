@@ -45,7 +45,7 @@ Because $0^\circ < 60^\circ < 90^\circ$, this is an **acute angle**.
 This matches our prediction that a positive dot product indicates an acute angle.
 
 ## 5. Why Each Step Is Valid
-- The cosine function is strictly decreasing on $[0, \pi]$; $\cos\theta > 0$ strictly maps to the acute interval $(0, \pi/2)$.
+- The cosine function is strictly decreasing on $[0, \pi]$; $\cos\theta > 0$ corresponds to $0\le\theta<\pi/2$. For the present vectors, which are not parallel, the angle is strictly acute.
 - The value $\arccos(1/2) = \pi/3$ is a standard exact trigonometric value.
 
 ## 6. Final Answer in Words

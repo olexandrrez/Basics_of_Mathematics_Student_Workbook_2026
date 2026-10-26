@@ -30,11 +30,6 @@ $ f'(x)$ has roots exactly at 0 and 2. Substitution into the original polynomial
 ## 9. Short In-Class Explanation
 The derivative factors as $3x(x-2)$, giving critical values 0 and 2. Its signs are positive, negative, positive, so the curve rises, falls, rises. The turning points are $(0,2)$ and $(2,-2)$.
 
-```text
-y                  • (0,2)
-↑              ／￣     ￣＼
-|           ／             ＼
-|         ／                 ＼
-|       ／                     • (2,−2) ／
-+------------------------------------------→ x
-```
+The sketch marks the maximum on the y-axis at $(0,2)$ and the minimum below the x-axis at $(2,-2)$. Both tails follow the cubic end behavior.
+
+![Graph of x cubed minus three x squared plus two with axes and extrema labelled](figures/exercise_01_cubic.svg)

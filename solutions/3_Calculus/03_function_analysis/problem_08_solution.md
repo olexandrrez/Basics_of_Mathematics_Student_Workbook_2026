@@ -33,12 +33,6 @@ The function is even, so extrema and inflection points occur symmetrically. As $
 ## 9. Short In-Class Explanation
 Use $f'$ for the three turning points, then $f''$ for curvature. The second derivative changes sign at plus and minus $\sqrt{2/3}$, giving two inflections and a symmetric W-shaped sketch.
 
-```text
-y       ╲                 ╱
-↑        ╲               ╱
-|         ╲             ╱
-|          •           •   minima (±√2,−4)
-|            ╲       ╱
-|              • (0,0)
-+-------------------------------→ x
-```
+The graph is W-shaped: $(0,0)$ is the central local maximum on the x-axis, both minima lie below it at height $-4$, and both tails rise. The green markers show the two inflection points.
+
+![W-shaped quartic with extrema and both inflection points labelled](figures/exercise_08_quartic.svg)

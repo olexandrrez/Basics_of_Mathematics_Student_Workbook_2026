@@ -68,7 +68,7 @@ The marked vertices and intercepts match the calculated features. The hyperbola 
 ![Circle, ellipse, parabola, and hyperbola with axes and key points](figures/exercise_01_conics.svg)
 
 ## 5. Why Each Step Is Valid
-- The signs and degrees of the variables in second-degree Cartesian equations uniquely determine the affine and Euclidean equivalence classes of conic sections.
+- In these canonical equations, the powers and signs identify the curve type: equal positive squared terms give a circle, unequal positive squared terms give an ellipse, a squared term with a linear term gives a parabola, and opposite signs give a hyperbola. These patterns identify the type but do not alone determine the curve’s size or semiaxes; those depend on the coefficients and constants. In a general second-degree equation, signs and degrees alone do not uniquely determine its Euclidean equivalence class.
 - Setting coordinates to zero isolates the exact axis intercepts and vertices.
 
 ## 6. Final Answer in Words

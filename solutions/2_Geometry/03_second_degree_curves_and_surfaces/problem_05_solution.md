@@ -52,7 +52,7 @@ The vertical distance between the curve and the asymptote lines vanishes to zero
 
 ### Sketch
 
-The vertices are $(\pm4,0)$; the dashed lines are the asymptotes $y=\pm3x/4$.
+The vertices are $(\pm4,0)$. The figure draws both asymptotes as dashed lines: $y=3x/4$ and $y=-3x/4$.
 
 ![Horizontal hyperbola with vertices and asymptotes](figures/exercise_05_hyperbola.svg)
 

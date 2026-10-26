@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410" role="img" aria-label="Signed areas under y equals x and positive areas under y equals absolute value x from minus two to two"><title>Symmetry and signed area on minus two to two</title><rect width="100%" height="100%" fill="white"/><style>text{font:15px sans-serif;fill:#172033}.axis{stroke:#39465e;stroke-width:1.5}.line{fill:none;stroke:#1769aa;stroke-width:3}.tick{stroke:#39465e;stroke-width:1.2}</style>
+<text x="65" y="30" style="font-weight:bold;font-size:18px">y = x: equal signed areas cancel</text><text x="505" y="30" style="font-weight:bold;font-size:18px">y = |x|: areas add</text>
+<!-- left panel -->
+<path d="M60 210H420 M240 55V355" class="axis"/><path d="M120 300 L240 210 L360 120" class="line"/>
+<path d="M120 300 L240 210 L120 210 Z" fill="#e7a4a4" opacity=".6"/><path d="M240 210 L360 120 L360 210 Z" fill="#8bc89c" opacity=".65"/>
+<path d="M120 205V215 M360 205V215" class="tick"/><text x="112" y="235">−2</text><text x="354" y="235">2</text><text x="286" y="285" fill="#9d3030">− area 2</text><text x="280" y="145" fill="#247a3b">+ area 2</text><text x="401" y="204">x</text><text x="247" y="68">y</text>
+<!-- right panel -->
+<path d="M500 210H860 M680 55V355" class="axis"/><path d="M560 120 L680 210 L800 120" class="line"/>
+<path d="M560 120 L680 210 L560 210 Z" fill="#8bc89c" opacity=".65"/><path d="M680 210 L800 120 L800 210 Z" fill="#8bc89c" opacity=".65"/>
+<path d="M560 205V215 M800 205V215" class="tick"/><text x="552" y="235">−2</text><text x="794" y="235">2</text><text x="545" y="105">area 2</text><text x="777" y="105">area 2</text><text x="841" y="204">x</text><text x="687" y="68">y</text></svg>

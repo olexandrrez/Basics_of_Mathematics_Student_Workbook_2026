@@ -10,7 +10,11 @@ We identify vertical behavior where the denominator vanishes and compare the rat
 Polynomial division writes a rational function as a polynomial quotient plus a proper fraction. If the remainder fraction tends to zero, the quotient line is an oblique asymptote.
 
 ## 4. Step-by-Step Solution
-Division gives
+Perform polynomial division one quotient term at a time. First choose $x$, because $x^2/x=x$:
+$$x(x-1)=x^2-x,$$
+and subtract this from $x^2+0x+1$ to leave $x+1$. Next choose $+1$, because $x/x=1$:
+$$1(x-1)=x-1,$$
+and subtract to leave remainder 2. Thus
 $$\frac{x^2+1}{x-1}=x+1+\frac2{x-1}.$$
 At $x=1$, the denominator vanishes and the numerator equals 2, so $x=1$ is a vertical asymptote. As $x\to\pm\infty$, $2/(x-1)\to0$. Hence the difference between $f(x)$ and $x+1$ tends to zero, so $y=x+1$ is an oblique asymptote.
 

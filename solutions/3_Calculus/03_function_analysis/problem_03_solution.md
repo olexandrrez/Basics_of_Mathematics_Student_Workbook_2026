@@ -32,12 +32,6 @@ At $x=0$, $f(0)=-1/2$; the left branch crosses zero at $-1$. For large $|x|$, th
 ## 9. Short In-Class Explanation
 Rewrite the function as $1+3/(x-2)$. This reveals both asymptotes; the derivative is always negative on each side, and the zero is at $x=-1$.
 
-```text
-y       y=1 ···························
-↑                 ╲                 ╱
-|                  ╲               ╱
-|                   ╲             ╱
-|      • (−1,0)      ╲           ╱
-+--------------------│--------------------→ x
-                     x=2
-```
+The graph has two decreasing branches. The left branch approaches $y=1$ from below, crosses the x-axis at $(-1,0)$, and falls to $-\infty$ as $x\to2^-$. The right branch starts at $+\infty$ just right of $x=2$ and decreases toward $y=1$ from above.
+
+![Graph of the rational function with both asymptotes and its zero correctly marked](figures/exercise_03_rational.svg)
