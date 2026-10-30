@@ -37,6 +37,8 @@ Odd symmetry predicts the extrema and inflections occur in opposite pairs. Subst
 ## 9. Short In-Class Explanation
 The denominator never vanishes and the function is odd. The first derivative yields extrema at plus and minus one; the second changes sign at plus and minus root three and zero. The curve passes through the origin and approaches zero at both ends.
 
-Here $y=0$ is the x-axis itself. The odd function stays positive for $x>0$, rises to $(1,1/2)$, then approaches that same axis from above. For $x<0$ it stays negative, approaches the axis from below as $x\to-\infty$, and tends to $-\infty$ as $x\to0^-$. The plotted curve preserves this origin symmetry.
+Here $y=0$ is the x-axis itself. The odd function stays positive for $x>0$, rises to $(1,1/2)$, then approaches that same axis from above. For $x<0$ it stays negative and approaches the axis from below as $x\to-\infty$. Near zero,
+$$\lim_{x\to0^-}\frac{x}{x^2+1}=0,$$
+because the numerator tends to zero while the denominator tends to 1; the values approach zero from below. The same quotient limit holds from the right, so $\lim_{x\to0}f(x)=0=f(0)$ and the function is continuous at zero. The plotted curve preserves this origin symmetry.
 
 ![Graph of x over x squared plus one with the actual x-axis, extrema, and inflections](figures/exercise_10_rational.svg)
