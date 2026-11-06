@@ -59,7 +59,7 @@ $$\frac{(x - 1)^2}{3^2} + \frac{(y + 2)^2}{2^2} = 1.$$
 - **Vertices**:
   - Horizontal vertices: $(1 \pm 3, -2) \implies (4, -2)$ and $(-2, -2)$.
   - Vertical vertices: $(1, -2 \pm 2) \implies (1, 0)$ and $(1, -4)$.
-- **Sketch description**: A smooth oval centered at $(1, -2)$, wider horizontally (total width $6$) than vertically (total height $4$).
+- **Sketch description**: A smooth oval centered at $(1, -2)$, wider horizontally (total width $6$) than vertically (total height $4$). Since the horizontal axis is $y=0$, the upper vertex $(1,0)$ lies on that axis, the centre is two units below it, and the lower vertex is $(1,-4)$.
 
 ---
 
