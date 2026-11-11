@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="390" viewBox="0 0 520 390" role="img" aria-label="Basis vectors and w equals three b1 plus b2">
+<title>Basis vectors and w=3b1+b2</title>
+<rect width="100%" height="100%" fill="white"/><style>text{font:14px sans-serif;fill:#172033}.grid{stroke:#e2e6eb}.axis{stroke:#455268;stroke-width:1.5}.vec{fill:none;stroke-width:2.5}</style><defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="context-stroke"/></marker></defs><text x="260" y="20" text-anchor="middle" style="font-weight:bold">Coordinates in the basis {b₁,b₂}</text>
+<path class="grid" d="M95,386V38"/>
+<path class="grid" d="M173,386V38"/>
+<path class="grid" d="M251,386V38"/>
+<path class="grid" d="M329,386V38"/>
+<path class="grid" d="M407,386V38"/>
+<path class="grid" d="M485,386V38"/>
+<path class="grid" d="M95,386H485"/>
+<path class="grid" d="M95,328H485"/>
+<path class="grid" d="M95,270H485"/>
+<path class="grid" d="M95,212H485"/>
+<path class="grid" d="M95,154H485"/>
+<path class="grid" d="M95,96H485"/>
+<path class="grid" d="M95,38H485"/>
+<path class="axis" d="M56.0,270H500.6 M95,403.4V26.399999999999977"/><text x="492.79999999999995" y="263">x</text><text x="102" y="32.20000000000002">y</text>
+<path class="vec" d="M95,270 L173,212" stroke="#bd4a3c" marker-end="url(#a)" /><text x="110.6" y="188.8" fill="#bd4a3c">b₁=(1,1)</text>
+<path class="vec" d="M95,270 L173,328" stroke="#25855a" marker-end="url(#a)" /><text x="180.8" y="351.2" fill="#25855a">b₂=(1,−1)</text>
+<path class="vec" d="M95,270 L407,154" stroke="#1769aa" marker-end="url(#a)" /><text x="336.8" y="133.7" fill="#1769aa">w=(4,2)</text>
+<path class="vec" d="M95,270 L329,96" stroke="#8056a8" marker-end="url(#a)" stroke-dasharray="6 4"/><text x="196.4" y="75.69999999999999" fill="#8056a8">3b₁=(3,3)</text>
+<path class="vec" d="M329,96 L407,154" stroke="#d08a16" marker-end="url(#a)" stroke-dasharray="6 4"/><text x="364.1" y="122.10000000000002" fill="#d08a16">+b₂</text>
+</svg>
