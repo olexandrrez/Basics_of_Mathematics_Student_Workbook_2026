@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="560" viewBox="0 0 700 560" role="img" aria-label="Circle, radius and tangent line at P">
+<title>Circle centred at (1,−2) and tangent at P=(4,2)</title>
+<rect width="100%" height="100%" fill="white"/><style>text{font:13px sans-serif;fill:#172033}.grid{stroke:#e1e5eb}.axis{stroke:#39465e;stroke-width:1.5}.circle{fill:none;stroke:#1769aa;stroke-width:2.5}.radius{stroke:#bd4a3c;stroke-width:2.5}.tangent{stroke:#25855a;stroke-width:2.5}.point{fill:#172033}</style><text x="350" y="20" text-anchor="middle" style="font-weight:bold">Tangent to (x−1)²+(y+2)²=25</text>
+<defs><clipPath id="plot"><rect x="120" y="40" width="390" height="450"/></clipPath></defs>
+<path class="grid" d="M120,40V490"/>
+<path class="grid" d="M150,40V490"/>
+<path class="grid" d="M180,40V490"/>
+<path class="grid" d="M210,40V490"/>
+<path class="grid" d="M240,40V490"/>
+<path class="grid" d="M270,40V490"/>
+<path class="grid" d="M300,40V490"/>
+<path class="grid" d="M330,40V490"/>
+<path class="grid" d="M360,40V490"/>
+<path class="grid" d="M390,40V490"/>
+<path class="grid" d="M420,40V490"/>
+<path class="grid" d="M450,40V490"/>
+<path class="grid" d="M480,40V490"/>
+<path class="grid" d="M510,40V490"/>
+<path class="grid" d="M120,490H510"/>
+<path class="grid" d="M120,460H510"/>
+<path class="grid" d="M120,430H510"/>
+<path class="grid" d="M120,400H510"/>
+<path class="grid" d="M120,370H510"/>
+<path class="grid" d="M120,340H510"/>
+<path class="grid" d="M120,310H510"/>
+<path class="grid" d="M120,280H510"/>
+<path class="grid" d="M120,250H510"/>
+<path class="grid" d="M120,220H510"/>
+<path class="grid" d="M120,190H510"/>
+<path class="grid" d="M120,160H510"/>
+<path class="grid" d="M120,130H510"/>
+<path class="grid" d="M120,100H510"/>
+<path class="grid" d="M120,70H510"/>
+<path class="grid" d="M120,40H510"/>
+<path class="axis" d="M120,250H510 M270,40V490"/><text x="502" y="244">x</text><text x="276" y="52">y</text>
+<g clip-path="url(#plot)"><circle class="circle" cx="300" cy="310" r="150"/><path class="tangent" d="M120,-12.5 L510,280.0"/><path class="radius" d="M300,310 L390,190"/><path d="M408,203 l9,-12 l12,9" fill="none" stroke="#39465e" stroke-width="1.5"/></g>
+<circle class="point" cx="300.0" cy="310.0" r="4.5"/><text x="307.0" y="303.0">C (1,−2)</text>
+<circle class="point" cx="390.0" cy="190.0" r="4.5"/><text x="397.0" y="183.0">P (4,2)</text>
+<circle class="point" cx="470.0" cy="250.0" r="4.5"/><text x="477.0" y="243.0">(20/3,0)</text>
+<circle class="point" cx="270.0" cy="100.0" r="4.5"/><text x="277.0" y="93.0">(0,5)</text>
+<text x="525" y="420" fill="#25855a">tangent: 3x+4y−20=0</text><text x="525" y="442" fill="#bd4a3c">radius vector CP=(3,4)</text><text x="525" y="464">radius ⟂ tangent</text></svg>
